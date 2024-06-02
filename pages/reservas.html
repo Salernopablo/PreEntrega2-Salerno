@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Reserva Degli Amici</title>
+</head>
+
+<body>
+    <header>
+        <h1> Reservas</h1>
+        <a href="../index.html"><img src="../images/logo.png" alt="logo Degli Amici"></article></a>
+        <nav>
+            <ul class="navegacion">
+                <li><a href="../index.html">Home</a></li> <!-- los dos puntos nos hacen ir a una carpeta arriba-->
+                <li><a href="./menu.html">Menu</a></li>
+                <Li><a href="./reservas.html">Reservas</a></Li>
+                <li><a href="./eventos.html">Eventos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+     </header>
+
+     <main>
+            <article class="titulo-menu">
+                <h2>Su Reserva</h2>
+            </article>
+
+            <section class="reserva">
+                <div class="formulario-reserva">
+                    <form action="form.php" method="post">
+                        <div class="formulario-items">
+                            <div class="formulario-item">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" name="nombre" id="nombre" placeholder="Pablo">
+                            </div>
+                            <div class="formulario-item">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" name="apellido" id="apellido" placeholder="Salerno">
+                            </div>
+                            <div class="formulario-item">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="alguien@email.com">
+                            </div>
+                            <div class="formulario-item">
+                                <label for="fecha">Fecha</label>
+                                <input type="date" name="fecha" id="fecha">
+                            </div>
+                            <div class="formulario-item">
+                                <label for="adultos">Adultos</label>
+                                <select name="adultos" id="adultos">
+                                    <option value="" disabled selected>Selecciona una opción</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                            <div class="formulario-item">
+                                <label for="ninos">Niños (Menores de 12 años)</label>
+                                <select name="ninos" id="ninos">
+                                    <option value="" disabled selected>Selecciona una opción</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                            <div class="plato-reserva">
+                                <img src="../images/risotto.jpg" alt="risotto">
+                            </div>
+                        </div>
+                        <div class="comentarios">
+                            <h2>Comentarios</h2>
+                            <textarea name="comentarios" id="comentarios" cols="100" rows="10" placeholder="Especificaciones para su reserva"></textarea>
+                            <input type="submit" value="Enviar" class="boton">
+                        </div>
+                    </form>
+                </div>
+            </section>
+    </main>
+    <footer>                                                            <!-- Aqui van los links para nuestras redes o contacto como telefono-->
+        <div>
+            <h3>Seguinos</h3>
+            <ul>
+                <li>
+                    <a href="https://facebook.com" target="_blank"><img src="../images/facebook.png" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" target="_blank"><img src="../images/twitter.png" alt="red social x"></a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank"><img src="../images/instagram.png" alt="instagram"></a>
+                </li>
+            </ul>
+        </div>
+        <article>
+            <h5>Contacto</h5>
+            <p> Calle: Avenida <br> Telefono: +549-011-1234-5678</p>
+        </article>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Eventos Degli</title>
+</head>
+<body>
+    <header>
+        <h1> Eventos </h1>
+        <article class="logo">
+            <a href="../index.html"><img src="../images/logo.png" alt="logo Degli Amici"></article></a>
+        <nav>
+            <ul class="navegacion">
+                <li><a href="../index.html">Home</a></li> <!-- los dos puntos nos hacen ir a una carpeta arriba-->
+                <li><a href="./menu.html">Menu</a></li>
+                <Li><a href="./reservas.html">Reservas</a></Li>
+                <li><a href="./eventos.html">Eventos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+     </header>
+
+     <main>
+        <section class="titulo-mapa"><h2>Eventos Degli</h2></section>
+
+        <div class="evento">
+            <img src="../images/degli-1.jpg" alt="foto evento">
+            <article class="descripcion-evento">
+                <p> En Degli vas a encontrar lugares únicos para realizar tu evento y disfrutar de un espacio al aire libre. <br> Según la cantidad de invitados, vas a contar con un sector de uso exclusivo para tu festejo. <br> Nuestras propuestas tienen una duración base, pudiendo agregar tiempo adicional según el evento solicitado.</p>
+                    <p><strong> Los horarios/turnos que ofrecemos son:</strong></p>
+                    <ul>
+                        <li>Mediodía o Noche Base de 4/5 horas de evento.</li>
+                        <li>Mañana o Tarde Base 3 horas de evento</li>
+                    </ul>
+                    <p>Los eventos se realizan con una base mínima de 40 a 50 invitados que varía según el día de la semana.</p>
+                    <p><strong>Para recibir un presupuesto, completa el formulario que se encuentra a continuación y contanos sobre el evento que te gustaría realizar.</strong></p>
+            </article>
+        </div>
+
+        <section class="titulo-mapa"><h3>Recibir una cotizacion</h3></section>
+
+<section class="cotizar">
+    <form action="form.php" method="post">
+    <div class="evento-items">
+        <label for="">Nombre y Apellido</label>
+        <input type="text" name="" id="" placeholder="Nombre y Apellido">
+    </div>
+    <div class="evento-items">
+        <label for="">Email</label>
+        <input type="email" name="" id="" placeholder="Email">
+    </div>
+    <div class="evento-items">
+        <label for="">Numero de telefono</label>
+        <input type="tel" name="" id="" placeholder="Numero de Telefono">
+    </div>
+    <div class="evento-items">
+        <label for="">Tipo de Evento</label>
+        <select name="" id="" class="selector">
+            <option value="">Boda sin ceremonia</option>
+            <option value="">Boda con ceremonia</option>
+            <option value="">Cumpleaños</option>
+            <option value="">Bautismos</option>
+            <option value="">Corporativos</option>
+        </select>
+    </div>
+    <div class="evento-items">
+        <label for="">Fecha</label>
+        <input type="date" name="" id="">
+    </div>
+    <div class="evento-items">
+        <label for="">Cantidad de invitados</label>
+        <input type="number" name="" id="">
+    </div>
+    <div class="caja-comentario">
+        <textarea name="" id="" cols="80" rows="20" placeholder="Brindanos mas informacion sobre tu evento"></textarea>
+    </div>
+    <div class="centrado">
+    <input type="submit" value="Recibir cotizacion" class="boton">
+    </div>
+</form>
+</section>
+     </main>
+     
+     
+     <footer>                                                            <!-- Aqui van los links para nuestras redes o contacto como telefono-->
+        <div>
+            <h3>Seguinos</h3>
+            <ul>
+                <li>
+                    <a href="https://facebook.com" target="_blank"><img src="../images/facebook.png" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" target="_blank"><img src="../images/twitter.png" alt="red social x"></a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank"><img src="../images/instagram.png" alt="instagram"></a>
+                </li>
+            </ul>
+        </div>
+        <article>
+            <h5>Contacto</h5>
+            <p> Calle: Avenida <br> Telefono: +549-011-1234-5678</p>
+        </article>
+    </footer>
+</html>
