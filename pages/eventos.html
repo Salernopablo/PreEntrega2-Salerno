@@ -22,66 +22,78 @@
         </nav>
      </header>
 
-     <main>
-        <section class="titulo-mapa"><h2>Eventos Degli</h2></section>
+    <main>
+        <section class="titulo-menu">
+            <h2>Eventos Degli</h2>
+        </section>
 
         <div class="evento">
-            <img src="../images/degli-1.jpg" alt="foto evento">
-            <article class="descripcion-evento">
-                <p> En Degli vas a encontrar lugares únicos para realizar tu evento y disfrutar de un espacio al aire libre. <br> Según la cantidad de invitados, vas a contar con un sector de uso exclusivo para tu festejo. <br> Nuestras propuestas tienen una duración base, pudiendo agregar tiempo adicional según el evento solicitado.</p>
-                    <p><strong> Los horarios/turnos que ofrecemos son:</strong></p>
-                    <ul>
-                        <li>Mediodía o Noche Base de 4/5 horas de evento.</li>
-                        <li>Mañana o Tarde Base 3 horas de evento</li>
-                    </ul>
-                    <p>Los eventos se realizan con una base mínima de 40 a 50 invitados que varía según el día de la semana.</p>
-                    <p><strong>Para recibir un presupuesto, completa el formulario que se encuentra a continuación y contanos sobre el evento que te gustaría realizar.</strong></p>
+                <div class="items-descripcion">
+                    <img src="../images/degli-1.jpg" alt="foto evento">
+                    <div class="item-descripcion">
+                        <p> En Degli vas a encontrar lugares únicos para realizar tu evento y disfrutar de un espacio al aire libre. <br> Según la cantidad de invitados, vas a contar con un sector de uso exclusivo para tu festejo. <br> Nuestras propuestas tienen una duración base, pudiendo agregar tiempo adicional según el evento solicitado.</p>
+                    </div>    
+                    <div class="item-descripcion dos">
+                        <h5><strong> Los horarios/turnos que ofrecemos son:</strong></h5>
+                        <br><p>Mediodía o Noche Base de 4/5 horas de evento.</p>
+                        <br><p>Mañana o Tarde Base 3 horas de evento.</p>
+                    </div>
+                    <div class="item-descripcion">
+                        <p>Los eventos se realizan con una base mínima de 40 a 50 invitados que varía según el día de la semana.</p>
+                    </div>
+                    <div class="item-descripcion instruccion">
+                        <h6><strong>Para recibir un presupuesto, completa el formulario que se encuentra a continuación y contanos sobre el evento que te gustaría realizar.</strong></h6>
+                    </div>
+                </div>
+        </div> 
+
+            <article class="titulo-menu">
+                <h3>Recibir una cotizacion</h3>
             </article>
-        </div>
 
-        <section class="titulo-mapa"><h3>Recibir una cotizacion</h3></section>
-
-<section class="cotizar">
-    <form action="form.php" method="post">
-    <div class="evento-items">
-        <label for="">Nombre y Apellido</label>
-        <input type="text" name="" id="" placeholder="Nombre y Apellido">
-    </div>
-    <div class="evento-items">
-        <label for="">Email</label>
-        <input type="email" name="" id="" placeholder="Email">
-    </div>
-    <div class="evento-items">
-        <label for="">Numero de telefono</label>
-        <input type="tel" name="" id="" placeholder="Numero de Telefono">
-    </div>
-    <div class="evento-items">
-        <label for="">Tipo de Evento</label>
-        <select name="" id="" class="selector">
-            <option value="">Boda sin ceremonia</option>
-            <option value="">Boda con ceremonia</option>
-            <option value="">Cumpleaños</option>
-            <option value="">Bautismos</option>
-            <option value="">Corporativos</option>
-        </select>
-    </div>
-    <div class="evento-items">
-        <label for="">Fecha</label>
-        <input type="date" name="" id="">
-    </div>
-    <div class="evento-items">
-        <label for="">Cantidad de invitados</label>
-        <input type="number" name="" id="">
-    </div>
-    <div class="caja-comentario">
-        <textarea name="" id="" cols="80" rows="20" placeholder="Brindanos mas informacion sobre tu evento"></textarea>
-    </div>
-    <div class="centrado">
-    <input type="submit" value="Recibir cotizacion" class="boton">
-    </div>
-</form>
-</section>
-     </main>
+            <section class="cotizar">
+                <div class="cotizacion">
+                    <form action="form.php" method="post">
+                        <div class="cotizaciones-items">
+                            <div class="cotizacion-item">
+                                <label for="">Nombre y Apellido</label>
+                                <input type="text" name="" id="" placeholder="Nombre y Apellido">
+                            </div>
+                            <div class="cotizacion-item">
+                                <label for="">Email</label>
+                                <input type="email" name="" id="" placeholder="Email">
+                            </div>
+                            <div class="cotizacion-item">
+                                <label for="">Numero de telefono</label>
+                                <input type="tel" name="" id="" placeholder="Numero de Telefono">
+                            </div>
+                            <div class="cotizacion-item">
+                                <label for="">Tipo de Evento</label>
+                                <select name="" id="" class="selector">
+                                    <option value="">Boda sin ceremonia</option>
+                                    <option value="">Boda con ceremonia</option>
+                                    <option value="">Cumpleaños</option>
+                                    <option value="">Bautismos</option>
+                                    <option value="">Corporativos</option>
+                                </select>
+                            </div>
+                            <div class="cotizacion-item">
+                                <label for="">Fecha</label>
+                                <input type="date" name="" id="">
+                            </div>
+                            <div class="cotizacion-item">
+                                <label for="">Cantidad de invitados</label>
+                                <input type="number" name="" id="">
+                            </div>
+                            <div class="comentarios">
+                                <textarea name="" id="" cols="80" rows="15" placeholder="Brindanos mas informacion sobre tu evento"></textarea>
+                                <input type="submit" value="Recibir cotizacion" class="boton">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+    </main>
      
      
      <footer>                                                            <!-- Aqui van los links para nuestras redes o contacto como telefono-->
