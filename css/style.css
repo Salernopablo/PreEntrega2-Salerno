@@ -471,6 +471,10 @@ footer p{
     flex-direction: column;
 }
 
+.caja-fecha{                    /* agregado ahora */
+    width: 100%;
+}
+
 .formulario-item{
     display: flex;
     flex-direction: column;
