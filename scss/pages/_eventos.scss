@@ -1,0 +1,174 @@
+/*---- EVENTOS ----*/
+/* Eventos celular */
+.evento{
+    h5{
+        font-size: 16px;
+        margin-top: 20px;
+        text-decoration: underline;
+    }
+    ul{
+        margin: 20px;
+    }
+    img{
+        display: none;
+    }
+    .items-descripcion{
+        margin: 20px;
+        font-size: 15px;
+        margin: 20px;
+        p{
+            padding-left: 10px;
+        }
+        h5{
+            text-align: center;
+        }
+        h6{
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    }
+    .instruccion{
+        margin: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+.cotizar{
+    .cotizaciones{
+        &-items{
+            display: flex;
+            flex-direction: column;
+            .cotizacion-item{
+                display: flex;
+                flex-direction: column;
+                background-color: $color-principal;
+                border-radius: 7px;
+                text-align: center;
+                margin: 20px;
+                .selector{
+                    border-radius: 10px;
+                    text-align: center;
+                }
+                input{
+                    border-radius: 10px;
+                    text-align: center;
+                }
+            }
+        }
+        .comentarios{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            textarea{
+                width: 100%;
+                text-align: center;
+                border-radius: 10px;
+            }
+            .boton{
+                text-align: center;
+                margin: 20px;
+            }
+        }
+    }
+}
+/* Eventos tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+    .evento{
+        .items-descripcion{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 178px ;
+            flex-direction: column;
+            column-gap: 15px;
+            img{
+                display: inline-block;
+                grid-column: 4 / 6;
+                grid-row: 1 / 4;
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                padding: 5px;
+            }
+            .item-descripcion{
+                grid-column: 1 / 4;
+                align-self: center;
+            }
+            .instruccion{
+                grid-column: 1 / 6;
+            }
+        }
+    }
+
+    .cotizar{
+        .cotizaciones{
+            &-items{
+                label{
+                    margin-bottom: 10px;
+                }
+                .cotizacion-item{
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+/* Eventos dextop */
+@media (min-width: 1024px){
+.evento{
+    .items-descripcion{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr) 120px;
+        column-gap: 15px;
+        img{
+            display: inline-block;
+            grid-column: span 2;
+            grid-row: span 3;
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            padding:0;
+        }
+        .item-descripcion{
+            grid-column: span 2;
+            align-self: center;
+        }
+        .dos{
+            padding-left: 35px;
+        }
+        .instruccion{
+            grid-column: span 4;
+            h6{
+                font-size: 18px;
+            }
+        }
+    }
+}
+.cotizar{
+    .cotizaciones{
+        &-items{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(10, 100px);
+            margin-bottom: 20px;
+        }
+        .cotizacion-item{
+            flex-direction: column;
+            grid-column: 2 /span 2;
+            object-fit: contain;
+            background-color: white;
+        }
+        .comentarios{
+            grid-column: 2 / 4;
+            grid-row: 7 / 12;
+            textarea{
+                grid-column: -4 span 2;
+                }
+            .boton{
+                margin-bottom: 40px;
+                } 
+            }
+        }
+    }
+}

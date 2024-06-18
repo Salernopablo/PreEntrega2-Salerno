@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;         // toma como medida principal nuestra caja de contenido
+    font-family: $font-base;
+    font-style: italic;
+    color: $color-secundario;
+}
+
+ul, 
+ol{                                 // las listas no tendran estilo, ni viñetas
+    list-style: none; 
+}
+
+a{                                  //los enlaces no estaran decorados
+    text-decoration: none; 
+}
+
+img{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+

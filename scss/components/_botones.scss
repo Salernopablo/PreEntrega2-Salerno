@@ -1,0 +1,11 @@
+.boton{                             /*---- botones ----*/
+    border: 2px solid $color-secundario;
+    color: $color-principal;
+    background-color: $color-secundario;
+    padding: 6px 8px;
+    width: fit-content;
+    border-radius: 14px;
+    a{
+    color: $color-principal;
+    }
+}

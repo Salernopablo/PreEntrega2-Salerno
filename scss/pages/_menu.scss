@@ -1,0 +1,97 @@
+/*---- MENU ----*/
+/* Menu celular */
+.titulo-menu{
+    text-align: center;
+    padding: 28px;
+    font-size: 20px;
+    text-decoration:solid;
+}
+.submenu{
+    h3{
+        text-align: center;
+        font-size: 25px;
+        padding: 20px;
+        text-decoration: underline;
+    }
+    .menu-items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        h5{
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-self: self-start;
+        }
+        .menu-item{
+            border: 2px dotted $color-secundario;
+            margin:15px;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: $color-principal;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+/* Menu tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+    .submenu{
+        .menu-items{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 16px;
+            .menu-item{ 
+                width: auto;
+                background-color: white;
+                border: none;
+                p{
+                    font-size: 15px;
+                    padding-top: 8px;
+                }
+            }
+        }
+        .abajo, .salada{
+            grid-column: span 3;
+        }
+        .romana{
+            grid-column:3;
+        }
+    }
+}
+/* Menu dextop */
+@media (min-width: 1024px){
+    .submenu{
+        .menu-items{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            .menu-item{
+                width: auto;
+                background-color: white;
+                border: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h5{
+                    text-decoration: underline;
+                    display: flex;
+                    align-self: center;
+                }
+                p{
+                    padding-top: 15px;
+                }
+            }
+        }
+        .cinco{
+            grid-column: 1 / 3;
+        }
+        .seis{
+            grid-column: 3 / 5;
+        }
+        .abajo{
+            grid-column: 3 / 5;
+        }
+    }
+}

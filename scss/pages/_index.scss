@@ -1,0 +1,147 @@
+/*---- INDEX ----*/
+/* Index celular */
+.bienvenido-img {
+    display: none;
+}
+.bienvenido{
+        text-align: center;
+        padding: 40px;
+        h4{
+            font-size: 20px;
+        margin-bottom: 15px;
+        }
+}
+.recomendados-index {                   /* toda la seccion */
+        background-color: $color-principal;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-direction: column;
+        & .boton{
+            margin-bottom: 50px;
+        }
+        .recomendado-titulo{ 
+            h2{             /* titulo */
+            margin-top: 30px;
+            font-size: 20px;  
+            text-decoration: underline;  
+            }
+        }
+        .caja-menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            &-tarjeta{
+                width: 100%;
+            max-width: 380px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+            img{
+                width: 100%;
+                aspect-ratio: 16/9;
+                height: auto;
+                object-fit: contain;
+                border-radius: 8px 8px 0 0;
+                padding: 0;
+            }
+            &-cuerpo{
+                padding: 16px;
+                font-size: 100%;
+                text-align: center;
+            } 
+            }
+        }
+}
+.reserva-mesa{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    h3{
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+}
+.ubicacion-mapa{
+    display: none;
+}
+/* Index tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+    .bienvenido-img{
+        display: flex;
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: contain;
+    }
+    .recomendados-index{
+        .caja-menu {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+    }
+}
+/* Index dextop */
+@media (min-width: 1024px) {
+    .bienvenido-img{
+        display: flex;
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        img{
+            padding:0;  
+        }
+    }
+    .bienvenido{
+        h4{
+            font-size: 35px;
+            margin-bottom: 5px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .recomendados-index{
+        .recomendado-titulo{
+            h2 {         
+                font-size: 35px;   
+            }
+        }
+        .caja-menu {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+    }
+    .reserva-mesa{
+        h3{
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+    }
+    .ubicacion-mapa{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        .titulo-mapa{
+            font-size: 30px;
+            color: $color-secundario;
+            text-align: center;
+            margin: 35px;
+            text-decoration: underline;
+        }
+        .mapa{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    }
+}
