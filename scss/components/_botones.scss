@@ -5,6 +5,11 @@
     padding: 6px 8px;
     width: fit-content;
     border-radius: 14px;
+    box-shadow: 10px 12px 30px $color-secundario;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    &:hover{
+        animation: boton 0.3s forwards;
+    }
     a{
     color: $color-principal;
     }

@@ -1,0 +1,33 @@
+// Logo en el header
+@keyframes logo {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+  // Botones
+@keyframes boton {
+    0% {
+        background-color: $color-secundario;
+        transform: scale(1);
+    }
+    100% {
+        background-color: darken($color-secundario, 10%);
+        transform: scale(1.05);
+    }
+}
+
+  // Tarjetas
+@keyframes tarjetas {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}

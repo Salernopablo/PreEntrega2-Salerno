@@ -48,6 +48,10 @@
                 object-fit: contain;
                 border-radius: 8px 8px 0 0;
                 padding: 0;
+                transition: transform 0.3s ease;
+                &:hover{
+                    animation: tarjetas 0.3s forwards;
+                }
             }
             &-cuerpo{
                 padding: 16px;
@@ -117,8 +121,15 @@
         .caja-menu {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+            gap: 40px;
             justify-items: center;
+            padding: 0px 20px;
+            &-tarjeta{
+                background-color: white;
+                border-radius: 40px;
+                border: dotted 1px white;
+                box-shadow: 20px 5px 30px;
+            }
         }
     }
     .reserva-mesa{

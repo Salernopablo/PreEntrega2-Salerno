@@ -7,3 +7,13 @@ $font-base: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     justify-content: center;
     align-items: center;
 }
+@mixin mq-tablet{
+    @media (min-width:481px) and (max-width:1023px){
+        @content;
+    }
+}
+@mixin mq-desktop{
+    @media (min-width:1024px){
+        @content;
+    }
+}
