@@ -85,9 +85,13 @@
 /* Nosotros dextop */
 @media (min-width: 1024px){
     .video-cocina {
+        display: flex;
+        justify-content: center;
+        background-color: $color-principal;
         video{
-        display: inline-block;
-        width: 100%;
+        display: flex;
+        width: 75%;
+        padding: 5px 0px;
     }
     }
     .descripcion-nosotros{

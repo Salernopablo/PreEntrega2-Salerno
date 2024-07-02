@@ -188,7 +188,7 @@ footer p {
   text-align: center;
   padding: 40px;
 }
-.bienvenido h4 {
+.bienvenido h2 {
   font-size: 20px;
   margin-bottom: 15px;
 }
@@ -203,7 +203,7 @@ footer p {
 .recomendados-index .boton {
   margin-bottom: 50px;
 }
-.recomendados-index .recomendado-titulo h2 { /* titulo */
+.recomendados-index .recomendado-titulo h3 { /* titulo */
   margin-top: 30px;
   font-size: 20px;
   text-decoration: underline;
@@ -249,7 +249,7 @@ footer p {
   align-items: center;
   padding: 30px;
 }
-.reserva-mesa h3 {
+.reserva-mesa h4 {
   font-size: 12px;
   padding-bottom: 20px;
 }
@@ -284,14 +284,14 @@ footer p {
   .bienvenido-img img {
     padding: 0;
   }
-  .bienvenido h4 {
+  .bienvenido h2 {
     font-size: 35px;
     margin-bottom: 5px;
   }
   .bienvenido p {
     font-size: 20px;
   }
-  .recomendados-index .recomendado-titulo h2 {
+  .recomendados-index .recomendado-titulo h3 {
     font-size: 35px;
   }
   .recomendados-index .caja-menu {
@@ -307,7 +307,7 @@ footer p {
     border: dotted 1px white;
     box-shadow: 20px 5px 30px;
   }
-  .reserva-mesa h3 {
+  .reserva-mesa h4 {
     font-size: 25px;
     padding-bottom: 20px;
   }
@@ -755,9 +755,15 @@ footer p {
 }
 /* Nosotros dextop */
 @media (min-width: 1024px) {
+  .video-cocina {
+    display: flex;
+    justify-content: center;
+    background-color: #dad3c8;
+  }
   .video-cocina video {
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    width: 75%;
+    padding: 5px 0px;
   }
   .descripcion-nosotros {
     display: grid;

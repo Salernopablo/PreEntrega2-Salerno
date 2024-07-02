@@ -6,7 +6,7 @@
 .bienvenido{
         text-align: center;
         padding: 40px;
-        h4{
+        h2{
             font-size: 20px;
         margin-bottom: 15px;
         }
@@ -21,7 +21,7 @@
             margin-bottom: 50px;
         }
         .recomendado-titulo{ 
-            h2{             /* titulo */
+            h3{             /* titulo */
             margin-top: 30px;
             font-size: 20px;  
             text-decoration: underline;  
@@ -67,7 +67,7 @@
     flex-direction: column;
     align-items: center;
     padding: 30px;
-    h3{
+    h4{
         font-size: 12px;
         padding-bottom: 20px;
     }
@@ -104,7 +104,7 @@
         }
     }
     .bienvenido{
-        h4{
+        h2{
             font-size: 35px;
             margin-bottom: 5px;
         }
@@ -114,7 +114,7 @@
     }
     .recomendados-index{
         .recomendado-titulo{
-            h2 {         
+            h3{         
                 font-size: 35px;   
             }
         }
@@ -133,7 +133,7 @@
         }
     }
     .reserva-mesa{
-        h3{
+        h4{
             font-size: 25px;
             padding-bottom: 20px;
         }
