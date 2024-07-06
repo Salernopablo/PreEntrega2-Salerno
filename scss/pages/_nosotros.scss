@@ -1,4 +1,3 @@
-/*---- NOSOTROS ----*/
 /* Nosotros celular */
 .video-cocina video{
     display: none;
@@ -49,11 +48,10 @@
             display: inline-block;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             grid-column: 4 / span 3 ;
             grid-row: span 2;
             border-radius: 20px;
-            padding: 25px;
         }
         .nosotros{
             grid-column: span 3;
@@ -109,7 +107,6 @@
             grid-column: 4 / span 3 ;
             grid-row: span 2;
             border-radius: 20px;
-            padding: 25px;
         }
         .nosotros{
             grid-column: span 3;

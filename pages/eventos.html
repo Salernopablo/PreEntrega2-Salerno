@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Celebra tu próximo evento en Degli Amici, tu restaurant italiano ideal. Ofrecemos espacios exclusivos, un servicio personalizado y la mejor gastronomía del sur de Italia. Contáctanos para más información.">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Eventos Degli</title>
+    <title>Tu evento especial en Necochea, Degli Amici: Un viaje sensorial por Italia - Descubre nuevos sabores y disfruta de una experiencia única</title>
 </head>
 <body>
     <header>
@@ -14,7 +14,7 @@
             <a href="../index.html"><img src="../images/logo.png" alt="logo Degli Amici"></article></a>
         <nav>
             <ul class="navegacion">
-                <li><a href="../index.html">Home</a></li> <!-- los dos puntos nos hacen ir a una carpeta arriba-->
+                <li><a href="../index.html">Home</a></li> 
                 <li><a href="./menu.html">Menu</a></li>
                 <Li><a href="./reservas.html">Reservas</a></Li>
                 <li><a href="./eventos.html">Eventos</a></li>
@@ -53,37 +53,37 @@
                     <form action="form.php" method="post">
                         <div class="cotizaciones-items">
                             <div class="cotizacion-item">
-                                <label for="">Nombre y Apellido</label>
-                                <input type="text" name="" id="" placeholder="Nombre y Apellido">
+                                <label for="nombre_completo">Nombre y Apellido</label>
+                                <input type="text" name="nombre_completo" id="nombre_completo" placeholder="Nombre y Apellido">
                             </div>
                             <div class="cotizacion-item">
-                                <label for="">Email</label>
-                                <input type="email" name="" id="" placeholder="Email">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Email">
                             </div>
                             <div class="cotizacion-item">
-                                <label for="">Numero de telefono</label>
-                                <input type="tel" name="" id="" placeholder="Numero de Telefono">
+                                <label for="telefono">Numero de telefono</label>
+                                <input type="tel" name="telefono" id="telefono" placeholder="Numero de Telefono">
                             </div>
                             <div class="cotizacion-item">
-                                <label for="">Tipo de Evento</label>
-                                <select name="" id="" class="selector">
-                                    <option value="">Boda sin ceremonia</option>
-                                    <option value="">Boda con ceremonia</option>
-                                    <option value="">Cumpleaños</option>
-                                    <option value="">Bautismos</option>
-                                    <option value="">Corporativos</option>
+                                <label for="tipo_evento">Tipo de Evento</label>
+                                <select name="tipo_evento" id="tipo_evento" class="selector">
+                                    <option value="boda_sin_ceremonia">Boda sin ceremonia</option>
+                                    <option value="boda_con_ceremonia">Boda con ceremonia</option>
+                                    <option value="cumpleanos">Cumpleaños</option>
+                                    <option value="bautismos">Bautismos</option>
+                                    <option value="corporativos">Corporativos</option>
                                 </select>
                             </div>
                             <div class="cotizacion-item">
-                                <label for="">Fecha</label>
-                                <input type="date" name="" id="" class="caja-fecha">
+                                <label for="fecha">Fecha</label>
+                                <input type="date" name="fecha" id="fecha" class="caja-fecha">
                             </div>
                             <div class="cotizacion-item">
-                                <label for="">Cantidad de invitados</label>
-                                <input type="number" name="" id="">
+                                <label for="cantidad_invitados">Cantidad de invitados</label>
+                                <input type="number" name="cantidad_invitados" id="cantidad_invitados">
                             </div>
                             <div class="comentarios">
-                                <textarea name="" id="" cols="80" rows="15" placeholder="Brindanos mas informacion sobre tu evento"></textarea>
+                                <textarea name="comentarios" id="comentarios" cols="80" rows="15" placeholder="Brindanos mas informacion sobre tu evento"></textarea>
                                 <input type="submit" value="Recibir cotizacion" class="boton">
                             </div>
                         </div>
@@ -91,7 +91,7 @@
                 </div>
             </section>
     </main> 
-    <footer>                                                            <!-- Aqui van los links para nuestras redes o contacto como telefono-->
+    <footer>                                                            
         <div>
             <h3>Seguinos</h3>
             <ul>
